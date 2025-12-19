@@ -1,0 +1,129 @@
+
+
+
+/* Styles modelo dos cards */
+.service-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: var(--light-bg);
+}
+
+.service-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.service-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-category {
+  display: inline-block;
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.service-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.service-price {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.service-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.rating-stars {
+  color: #ffd700;
+}
+
+.rating-value {
+  color: var(--text-light);
+}
+
+.service-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.hire-btn {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hire-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.favorite-btn {
+  background-color: var(--light-bg);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+
+    & i { color:  red;}
+}
+
+.favorite-btn:hover,
+.favorite-btn.active {
+  background-color: var(--accent-red);
+  color: var(--white);
+}

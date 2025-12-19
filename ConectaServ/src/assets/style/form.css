@@ -1,0 +1,167 @@
+body{ 
+    background: linear-gradient( 135deg, var(--primary-color), var(--secundary-color) 100% );
+}
+
+.form-section {
+  margin-top: 160px;
+  margin-bottom: 60px;
+  height: 100%;
+}
+
+.form-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+h1.form-title {
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.form-label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+
+.account-type-option {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+
+.account-type-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* O visual do cartão */
+.selection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border: 2px solid #e9ecef; 
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+/* Ícones dentro dos cartões */
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Cores específicas para PSA (Autônomo) */
+.psa-icon {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+/* Cores específicas para PE (Empresa) */
+.pe-icon {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card-price {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Cor do preço Autônomo */
+.text-blue {
+  color: #d97706;
+}
+/* Cor do preço Empresa */
+.text-orange {
+  color: #d97706;
+}
+
+/* --- Estado SELECIONADO --- */
+.account-type-option input[type="radio"]:checked + .selection-card {
+  border-color: #f0bb59; 
+  box-shadow: 0 0 0 4px rgba(91, 115, 232, 0.15); 
+  background-color: #f8faff;
+}
+
+/* --- Botão Salvar --- */
+.btn-submit {
+  background-color: #ff8a34; 
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 15px;
+  border-radius: 50px; 
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #e67e22;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-section {
+      margin-top: 60px;
+    }   
+  .form-card {
+    padding: 20px;
+  }
+  .selection-card {
+    padding: 20px 10px;
+  }
+
+  header{
+    background-color: var(--white);
+  }
+}

@@ -1,0 +1,83 @@
+
+.section-main{
+  height: auto;
+}
+
+
+/* Estilo menu navegação servoços -------------- */
+.section-service {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between; 
+  gap: 2rem;
+}
+
+.section-service h2 {
+  color: var(--black-md-color);
+}
+
+.filter-btn {
+  border: 2px solid var(--border-color);
+  background-color: var(--white);
+  color: var(--text-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+/* ----------------------------------------- */
+
+
+/* Responvidade mobile ------------- */
+@media (max-width: 900px) {
+
+  .section-main{
+    & h2{
+      font-size: 20px;
+    }
+
+  }
+  .filter-buttons{
+    display: none;
+  }
+  
+  .filter-btn {
+    width: auto;
+    height: 40px;
+  }
+
+  .buttons-mobile{
+    display: flex;
+  }
+
+
+}
+/* --------------------------------- */
+
+/* Responcividade desktop ---------- */
+@media (min-width: 901px) {
+
+  .filter-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    padding: 5px 20px;
+  }
+
+  .filter-buttons-mobile{
+    display: none;
+  }
+
+}
+/* --------------------------------- */

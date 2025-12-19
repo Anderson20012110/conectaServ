@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --primary-color: #fc9904;
+    --primary-dark: #d35400;
+    --secundary-color: #fc7c04;
+    --white: #ffff;
+    --ice-color: #f6f1f1;
+    --border-color: #dcdcdc;
+    --black-md-color: #4f4e4e; 
+    --secondary-color: #2c3e50;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: 100dvh;
+
+}
+
+i{
+ color: var(--black-md-color);
+}
+
+.bord{
+    border: solid 1px red;
+}

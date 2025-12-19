@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links Css -->
+    <link rel="stylesheet" href="/src/assets/style/global.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/header-naveBar.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/main.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/banner.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/modalCard.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/categoryService.css">
+    <link rel="stylesheet" href="/src/assets/style/componetsCss/footer.css">
+
+    <!-- Links JS -->   
+    <script src="/src/assets/script/categoryService.js" defer></script>
+    <script type="module" src="/src/assets/script/serviceCard.js" defer></script>
+
+    <!-- CDN font awesome e bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <title>ConectaServ</title>
+
+</head>
+<body>
+
+    <!-- INÍCIO CABEÇALHO --------------------------------------------------------------------------->
+    <header class="container-fluid">
+      <a href="/src/index.html">
+        <div class="logo">
+            <i class="fa-solid fa-snowplow"></i>
+            <p>conecta<span>Serv</span></p>
+        </div>
+      </a>
+        <div class="search">
+            <input type="search" name="Busca" id="#"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav>
+            <i class="fa-solid fa-magnifying-glass" id="search-moba"></i>
+
+            <!-- Botão Favorito -------------------------------------------------------------------->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-heart"></i></button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Favorito</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                ...
+              </div>
+            </div>
+
+            <a href="/src/pages/login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+
+
+            <!-- Botão de Configuração- -------------------------------------------------------------->
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-gear"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <div class="logo"><i class="fa-solid fa-snowplow"></i><p>conecta<span>Serv</span></p></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="container">
+                    <div class="offcanvas-body"> Sobre </div> 
+                    <div class="offcanvas-body"> Termos de Serviço</div>
+                    <div class="offcanvas-body"> Contato </div>
+                    <div class="offcanvas-body"> Suporte </div>
+                    <div class="offcanvas-body"> Reportar</div>
+                    <a href="/src/pages/abaut.html">
+                    </a>
+                  </div>
+                </div>
+        </nav>
+    </header>
+    <!-- FINAL CABEÇALHO ---------------------------------------------------------------------------->
+
+    <!-- Fitro + bootstrap -->
+    <div class="filter">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/pages/form.html">Candidatar-se</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/pages/abaut.html">Politicas da Empresa</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Serviços
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Advogado</a></li>
+                    <li><a class="dropdown-item" href="#">Arquiteto</a></li>
+                    <li><a class="dropdown-item" href="#">Cerralheiro</a></li>
+                    <li><a class="dropdown-item" href="#">Eletricita</a></li>
+                    <li><a class="dropdown-item" href="#">Jardineiro</a></li>
+                    <li><a class="dropdown-item" href="#">Mecânico</a></li>
+                    <li><a class="dropdown-item" href="#">Marceneiro</a></li>
+                    <li><a class="dropdown-item" href="#">Pedreiro</a></li>
+                    <li><a class="dropdown-item" href="#">Gesseiro</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+    
+    
+    <!--Section Hedder ------------------------------------------------------------------------------> 
+    <section id="home" class="section-banner">
+      <div class="banner-content">
+          <h1 class="h1-desc">Encontre o Prestador Perfeito</h1>
+          <p class="p-desc">Conectando profissionais qualificados com clientes que precisam de serviços confiáveis</p>
+          <a href="#service" class="cta-button">Explorar Serviços</a>
+      </div>
+    </section> 
+    
+    <!-- INÍCIO CONTEUDO DA PÁGINA ------------------------------------------------------------------>
+    <div class="container">
+        <main>
+
+          <!-- Banner + bootstrap -->
+          <div class="banner">
+
+              <div id="carouselExampleAutoplaying carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/src/assets/img/bn-01.jpg" class="d-block w-100" alt="bn-01">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bn-02.jpg" class="d-block w-100" alt="bn-02">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bn-03.jpg" class="d-block w-100" alt="bn-03">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bn-04.jpg" class="d-block w-100" alt="bn-04">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bn-05.jpg" class="d-block w-100" alt="bn-05">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+          </div>
+
+          <!-- Banner celular + bootstrap -->
+          <div class="banner-mob">
+
+              <div id="carouselExampleAutoplaying carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" id="btn-bunner" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/src/assets/img/bnm-01.jpg" class="d-block w-100" alt="bnm-01">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bnm-02.jpg" class="d-block w-100" alt="bnm-02">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bnm-03.jpg" class="d-block w-100" alt="bnm-03">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bnm-04.jpg" class="d-block w-100" alt="bnm-04">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/bnm-05.jpg" class="d-block w-100" alt="bnm-05">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+          </div>
+
+          
+                <!-- Lista de linkes de serviços-->
+                <div class="container section-category-service ">
+                  <h3>Nossos Serviços</h3>
+                  <div class="btn-category-service" id="btnCategoryService"></div>
+                </div>
+
+
+            <!-- INÍCIO CAETÃO DE SERVIÇO ---------------------------------------------------------->
+            <section class="container section-main" id="service">
+
+              <div>
+                <!-- Services Section -->
+                <div class="section-service">
+                    <h2>Nossos Profissionais</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterByCategory('all')">Todos</button>
+                        <button class="filter-btn" onclick="filterByCategory('new')">Novos</button>
+                        <button class="filter-btn" onclick="filterByCategory('rated')">Mais Avaliados</button>
+                        <button class="filter-btn" onclick="filterByCategory('trending')">Em Destaque</button>
+                        <button class="filter-btn" onclick="filterByCategory('trending')">Menor Preço</button>
+                        <button class="filter-btn" onclick="filterByCategory('trending')">Maior Preço</button>
+                        <button class="filter-btn" onclick="filterByCategory('trending')">Distância</button>
+                    </div>
+                    <div class="filter-buttons-mobile">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-filter"></i> Filtro </a>
+                          <ul class="dropdown-menu buttons-mobile">
+                            <li>  <input type="radio" name="Maior preço" id=""> Maior preço </li>
+                            <li>  <input type="radio" name="Menor preço" id=""> Menor preço </li>
+                            <li>  <input type="radio" name="Mais perto" id="">Distância</li>
+                            <li>  <input type="radio" name="Melhor avaliação" id="">Mais Avaliados</li>
+                          </ul>
+                    </div>
+                </div>
+              </div>
+
+              <div id="card-service"></div>
+
+            </section>
+            <!-- FINAL CAETÃO DE SERVIÇO ---------------------------------------------------------->
+
+        </main>
+    </div>
+
+
+    <!-- INÍCIO RODAPÉ --------------------->
+    <footer class="f container-fluid">
+        <div class="f-content">
+            <div class="f-section">
+                <h4>Sobre ConectaServ</h4>
+                <p>Somos uma plataforma inovadora que conecta prestadores de serviços com clientes em busca de qualidade.</p>
+            </div>
+            <div class="f-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-phone"></i> +55 (81) 91234-5678</p>
+                <p><i class="fa-regular fa-envelope"></i> contato@conectaserv.com</p>
+            </div>
+            <div class="f-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>&copy; 2025 ConectaServ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+     <!-- FINAÇ RODAPÉ --------------------->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html> 
